@@ -1,0 +1,54 @@
+﻿@page "/weather"
+@inject HttpClient Http
+
+<PageTitle>Player Selection</PageTitle>
+
+<h1>Player Selection</h1>
+
+<p>This component demonstrates fetching player data from the server.</p>
+
+@if (players == null)
+{
+    <p><em>Loading player data...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Team</th>
+                <th>Fantasy Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var player in players)
+            {
+                <tr>
+                    <td>@player.Name</td>
+                    <td>@player.Position</td>
+                    <td>@player.Team</td>
+                    <td>@player.FantasyPoints</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private PlayerInfo[]? players;
+
+    protected override async Task OnInitializedAsync()
+    {
+        players = await Http.GetFromJsonAsync<PlayerInfo[]>("api/players"); // Replace with your API endpoint
+    }
+
+    public class PlayerInfo
+    {
+        public string? Name { get; set; }
+        public string? Position { get; set; }
+        public string? Team { get; set; }
+        public int FantasyPoints { get; set; }
+    }
+}

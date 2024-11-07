@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/sadesally/Desktop/NFLFantasyApp/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
+    },
+    {
+      "Id": "/Users/sadesally/Desktop/NFLFantasyApp/obj/Debug/net8.0/compressed/rmbe6p46xz.gz",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "/Users/sadesally/Desktop/NFLFantasyApp/obj/Debug/net8.0/scopedcss/bundle/NFLFantasyApp.styles.css",
+      "PackagePath": "staticwebassets/NFLFantasyApp.styles.css"
+    },
+    {
+      "Id": "/Users/sadesally/Desktop/NFLFantasyApp/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
+    },
+    {
+      "Id": "/Users/sadesally/Desktop/NFLFantasyApp/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/sadesally/Desktop/NFLFantasyApp/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/sadesally/Desktop/NFLFantasyApp/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/Users/sadesally/Desktop/NFLFantasyApp/wwwroot/icon-192.png",
+      "PackagePath": "staticwebassets/icon-192.png"
+    },
+    {
+      "Id": "/Users/sadesally/Desktop/NFLFantasyApp/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/sadesally/Desktop/NFLFantasyApp/wwwroot/sample-data/players.json",
+      "PackagePath": "staticwebassets/sample-data/players.json"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.NFLFantasyApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.NFLFantasyApp.props",
+      "PackagePath": "build\\NFLFantasyApp.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.NFLFantasyApp.props",
+      "PackagePath": "buildMultiTargeting\\NFLFantasyApp.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.NFLFantasyApp.props",
+      "PackagePath": "buildTransitive\\NFLFantasyApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
