@@ -167,7 +167,7 @@ else if (!isPlayerSelected && searchTerm.Length >= 1 && !filteredPlayers.Any())
                 substitute_player_name = substitutePlayer?.FullName
             };
 
-            var response = await Http.PostAsJsonAsync("https://nflrdataapp2-btfxapbhcuhxf5ez.canadacentral-01.azurewebsites.net/compute", payload);
+            var response = await Http.PostAsJsonAsync("https://nflrdataapp2-btfxapbhcuhxf5ez.canadacentral-01.azurewebsites.net/__docs__/compute", payload);
 
             if (response.IsSuccessStatusCode)
             {
