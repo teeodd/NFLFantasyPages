@@ -226,5 +226,54 @@ else if (!isPlayerSelected && searchTerm.Length >= 1 && !filteredPlayers.Any())
     
         [JsonPropertyName("substitute_player_points")]
         public decimal SubstitutePlayerPoints { get; set; }
+    
+        [JsonPropertyName("injured_last_play")]
+        public LastPlay InjuredLastPlay { get; set; }
+    
+        [JsonPropertyName("last_game_date")]
+        public string LastGameDate { get; set; }
+    
+        [JsonPropertyName("details")]
+        public GameDetails Details { get; set; }
     }
+    
+    public class LastPlay
+    {
+        [JsonPropertyName("time")]
+        public string Time { get; set; }
+    
+        [JsonPropertyName("quarter")]
+        public int Quarter { get; set; }
+    }
+    
+    public class GameDetails
+    {
+        [JsonPropertyName("season_year")]
+        public int SeasonYear { get; set; }
+    
+        [JsonPropertyName("injured_plays_count")]
+        public int InjuredPlaysCount { get; set; }
+    
+        [JsonPropertyName("substitute_plays_count")]
+        public int SubstitutePlaysCount { get; set; }
+    
+        [JsonPropertyName("injured_plays_details")]
+        public List<PlayDetail> InjuredPlaysDetails { get; set; }
+    
+        [JsonPropertyName("substitute_plays_details")]
+        public List<PlayDetail> SubstitutePlaysDetails { get; set; }
+    }
+    
+    public class PlayDetail
+    {
+        [JsonPropertyName("description")]
+        public string Description { get; set; }
+    
+        [JsonPropertyName("quarter")]
+        public int Quarter { get; set; }
+    
+        [JsonPropertyName("points")]
+        public decimal Points { get; set; }
+    }
+
 }
