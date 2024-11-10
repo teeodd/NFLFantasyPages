@@ -76,9 +76,9 @@ else if (!isPlayerSelected && searchTerm.Length >= 1 && !filteredPlayers.Any())
 {
     <div class="comparison-result">
         <h3>Comparison Results</h3>
-        <p>Combined Points: @computationResult.combined_points</p>
-        <p>Injured Player Points: @computationResult.injured_player_points</p>
-        <p>Substitute Player Points: @computationResult.substitute_player_points</p>
+        <p>Combined Points: @computationResult.CombinedPoints</p>
+        <p>Injured Player Points: @computationResult.InjuredPlayerPoints</p>
+        <p>Substitute Player Points: @computationResult.SubstitutePlayerPoints</p>
     </div>
 }
 
@@ -218,8 +218,8 @@ else if (!isPlayerSelected && searchTerm.Length >= 1 && !filteredPlayers.Any())
 
     public class ComputationResult
     {
-        public decimal combined_points { get; set; }
-        public decimal injured_player_points { get; set; }
-        public decimal substitute_player_points { get; set; }
+        public decimal CombinedPoints { get; set; }
+        public decimal InjuredPlayerPoints { get; set; }
+        public decimal SubstitutePlayerPoints { get; set; }
     }
 }
