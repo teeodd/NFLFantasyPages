@@ -218,8 +218,13 @@ else if (!isPlayerSelected && searchTerm.Length >= 1 && !filteredPlayers.Any())
 
     public class ComputationResult
     {
+        [JsonPropertyName("combined_points")]
         public decimal CombinedPoints { get; set; }
+    
+        [JsonPropertyName("injured_player_points")]
         public decimal InjuredPlayerPoints { get; set; }
+    
+        [JsonPropertyName("substitute_player_points")]
         public decimal SubstitutePlayerPoints { get; set; }
     }
 }
